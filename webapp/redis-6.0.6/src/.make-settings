@@ -1,0 +1,10 @@
+STD=-std=c11 -pedantic -DREDIS_STATIC=
+WARN=-Wall -W -Wno-missing-field-initializers
+OPT=-O2
+MALLOC=libc
+CFLAGS=-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/rashbir/opt/anaconda3/envs/newwebapp/include
+LDFLAGS=-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/rashbir/opt/anaconda3/envs/newwebapp/lib -L/Users/rashbir/opt/anaconda3/envs/newwebapp/lib
+REDIS_CFLAGS=
+REDIS_LDFLAGS=
+PREV_FINAL_CFLAGS=-std=c11 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/rashbir/opt/anaconda3/envs/newwebapp/include -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src
+PREV_FINAL_LDFLAGS=-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/rashbir/opt/anaconda3/envs/newwebapp/lib -L/Users/rashbir/opt/anaconda3/envs/newwebapp/lib -g -ggdb

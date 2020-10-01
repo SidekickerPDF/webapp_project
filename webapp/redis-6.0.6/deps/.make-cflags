@@ -1,0 +1,1 @@
+-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/rashbir/opt/anaconda3/envs/newwebapp/include

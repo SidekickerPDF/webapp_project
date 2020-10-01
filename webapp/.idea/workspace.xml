@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3dc67fd6-9cfe-4456-acfc-2723d6855fcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Modules/BinaryPdfForensics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/extractimages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/pdftoimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/rotating_card_thumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/rotating_card_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/rotating_card_thumb2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/rotating_card_thumb3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pdfscanner/contactus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pdfscanner/enduseragreement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pdfscanner/privacypolicy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/.idea/webapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/HighlightedPDFs.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/.idea/Modules.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/HiColors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/HiRegexes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/Highlight.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/PDFProcessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/PreBuildUpdated/source/GUI20200602.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/PreBuildUpdated/source/GUI20200621.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/PreBuildUpdated/source/HiColors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/PreBuildUpdated/source/HiLightModular20200602.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/PreBuildUpdated/source/HiRegexes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/PreBuildUpdated/source/arrangeAliases6b.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/PreBuildUpdated/source/pdfanalysismodule.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/PreBuildUpdated/source/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/SpacyAnnotator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/SpacyModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/img/60403.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/js/jquery-3.3.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/assets/js/project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/mainfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/Modules/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/07_Re_Premier_Bay_-_2018_VSC_168.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/20061108_Dean-Willcocks_v_Companies_Auditors_and_Liquidators_Disciplinary_Boar_rlIjqb5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/20070527_Albarran_v_CALDB_231_CLR_350.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/20090512_Gould_v_Companies_Auditors_and_Liquidators_Disciplinary_Board_-_2009_FCA_475.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/20130726_Levi_v_Companies_Auditors_and_Liquidators_Disciplinary_Board_-_2013_FCA_719.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/20160716_Joubert_CALDB.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/20180318_Dennis_Anthony_Turner_Committee.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/Hedges_Jasper_Gilligan_George_Ramsay_Ian_---__Banning_Orders__An_Empirical_Ana_q0JN6HQ.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/Orrcon_Operations_Pty_Ltd_v_Capital_Steel_and_Pipe_Pty_Ltd_No_2_2008_FCA_24.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/Re_Howarth_and_ASIC_-_2008_AATA_278.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/Re_Vouris_EPromotions_Australia_Pty_Ltd_and_Relectronic-Remech_Pty_Ltd_in_liq__SU8rs9I.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/Re_WYLIE_and_COMPANIES_AUDITORS_AND_LIQUIDATORS_DISCIPLINARY_BOARD_AUSTRALIAN__pFkVfkX.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/Rosegum_No_2_2017_FCA_36.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/Sleiman_And_Australian_Securities_and_Investments_Commission_-_2011_AATA_395.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/Spotwire_No_2_2004_FCA_571.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/Visnic_v_Australian_Securities_and_Investments_Commission_-_2007_HCA_24.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/media/documents/highlight/Rules_re_Costs.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/signup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/templatetags/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/templatetags/filename.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/templatetags/filepagecount.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/templatetags/filesize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/templatetags/filetime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/templatetags/settingsname.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/tokens.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/pdfscanner/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/css/design.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/css/fileupload.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/css/listdesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/css/sidenav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/icons/analysis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/icons/excel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/icons/expand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/icons/gear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/icons/info.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/icons/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/icons/toolbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/javascript/listjavascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/static/test.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/aboutus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/acc_active_email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/analysedocument.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/analysepdf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/analysisresult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/registeredsuccess.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/templates/pdfscanner/uploaddocument.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/webappproject/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/webappproject/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/webappproject/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/webappproject/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../newwebapp/webapp/webappproject/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/.idea/.Modules 2.iml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/.idea/.misc 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/.idea/.modules 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/.idea/.vcs 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/.idea/.workspace 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/.idea/inspectionProfiles/.Project_Default 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/.idea/inspectionProfiles/.profiles_settings 2.xml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/HiColors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/HiColors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/PreBuildUpdated/source/GUI20200621.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/PreBuildUpdated/source/GUI20200621.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/PreBuildUpdated/source/HiLightModular20200602.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/PreBuildUpdated/source/HiLightModular20200602.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/css/.bootstrap.min 2.css.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/css/.font-awesome.min 2.css.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/fonts/.FontAwesome 2.otf.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/fonts/.fontawesome-webfont 2.eot.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/fonts/.fontawesome-webfont 2.svg.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/fonts/.fontawesome-webfont 2.ttf.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/fonts/.fontawesome-webfont 2.woff.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/fonts/.fontawesome-webfont 2.woff2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/img/.60403 2.png.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/js/.bootstrap.min 2.js.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/js/.jquery-3.3.1.slim.min 2.js.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/js/.popper.min 2.js.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/assets/js/.project 2.js.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/documents/CV.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/documents/highlight/Rules_re_Costs.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/usersettings/.Laurence_default 2.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/usersettings/.Laurence_test 2.json.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/usersettings/Laurence_default.json" beforeDir="false" afterPath="$PROJECT_DIR$/media/usersettings/Laurence_default.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.png" beforeDir="false" afterPath="$PROJECT_DIR$/output.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdfscanner/migrations/..__init__ 2.py.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdfscanner/migrations/.0001_initial 2.py.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdfscanner/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdfscanner/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdfscanner/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdfscanner/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/..gitignore 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.00-RELEASENOTES 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.BUGS 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.CONTRIBUTING 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.COPYING 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.INSTALL 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.MANIFESTO 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.README 2.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.TLS 2.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.github/workflows/.ci 2.yml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.github/workflows/.daily 2.yml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.redis 2.conf.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.runtest 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.runtest-cluster 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.runtest-moduleapi 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.runtest-sentinel 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/.sentinel 2.conf.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/.README 2.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/.update-jemalloc 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/..gitignore 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/..travis 2.yml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.CHANGELOG 2.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.CMakeLists 2.txt.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.COPYING 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.README 2.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.appveyor 2.yml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.async 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.async 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.async_private 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.dict 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.dict 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.fmacros 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.hiredis 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.hiredis 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.hiredis.pc 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.hiredis_ssl 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.hiredis_ssl.pc 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.net 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.net 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.read 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.read 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.sds 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.sds 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.sdsalloc 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.sockcompat 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.sockcompat 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.ssl 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.test 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.test 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/.win32 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/adapters/.ae 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/adapters/.glib 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/adapters/.ivykis 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/adapters/.libev 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/adapters/.libevent 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/adapters/.libuv 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/adapters/.macosx 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/adapters/.qt 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.CMakeLists 2.txt.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-ae 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-glib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-ivykis 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-libev 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-libevent 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-libevent-ssl 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-libuv 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-macosx 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-qt 2.cpp.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-qt 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/hiredis/examples/.example-ssl 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/..appveyor 2.yml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/..autom4te 2.cfg.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/..gitattributes 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/..gitignore 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/..travis 2.yml.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.COPYING 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.ChangeLog 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.INSTALL 2.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.Makefile 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.README 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.TUNING 2.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.autogen 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.config.stamp 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.configure 2.ac.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.jemalloc.pc 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/.run_tests 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/bin/.jemalloc-config 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/bin/.jemalloc.sh 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/bin/.jeprof 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/build-aux/.config 2.guess.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/build-aux/.config 2.sub.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/build-aux/.install-sh 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/doc/.html.xsl 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/doc/.jemalloc.xml 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/doc/.manpages.xsl 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/doc/.stylesheet 2.xsl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/.jemalloc 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/.jemalloc_defs.h 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/.jemalloc_macros.h 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/.jemalloc_mangle 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/.jemalloc_protos.h 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/.jemalloc_rename 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/.jemalloc_typedefs.h 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.arena_externs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.arena_inlines_a 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.arena_inlines_b 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.arena_stats 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.arena_structs_a 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.arena_structs_b 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.arena_types 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.assert 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.atomic 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.atomic_c11 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.atomic_gcc_atomic 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.atomic_gcc_sync 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.atomic_msvc 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.background_thread_externs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.background_thread_inlines 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.background_thread_structs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.base_externs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.base_inlines 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.base_structs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.base_types 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.bin 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.bin_stats 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.bit_util 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.bitmap 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.cache_bin 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.ckh 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.ctl 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.div 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.emitter 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.extent_dss 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.extent_externs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.extent_inlines 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.extent_mmap 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.extent_structs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.extent_types 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.hash 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.hooks 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_internal_decls 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_internal_defs.h 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_internal_externs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_internal_includes 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_internal_inlines_a 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_internal_inlines_b 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_internal_inlines_c 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_internal_macros 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_internal_types 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.jemalloc_preamble.h 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.large_externs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.log 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.malloc_io 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.mutex 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.mutex_pool 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.mutex_prof 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.nstime 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.pages 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.ph 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.private_namespace 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.private_symbols 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.prng 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.prof_externs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.prof_inlines_a 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.prof_inlines_b 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.prof_structs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.prof_types 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.public_namespace 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.public_unnamespace 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.ql 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.qr 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.rb 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.rtree 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.rtree_tsd 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.size_classes 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.smoothstep 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.smoothstep 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.spin 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.stats 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.sz 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tcache_externs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tcache_inlines 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tcache_structs 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tcache_types 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.ticker 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tsd 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tsd_generic 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tsd_malloc_thread_cleanup 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tsd_tls 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tsd_types 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.tsd_win 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.util 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/jemalloc/internal/.witness 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/msvc_compat/.strings 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/msvc_compat/.windows_extra 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/msvc_compat/C99/.stdbool 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/include/msvc_compat/C99/.stdint 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/m4/.ax_cxx_compile_stdcxx 2.m4.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/.ReadMe 2.txt.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/.jemalloc_vc2015 2.sln.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/.jemalloc_vc2017 2.sln.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/projects/vc2015/jemalloc/.jemalloc 2.vcxproj.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/projects/vc2015/jemalloc/.jemalloc.vcxproj 2.filters.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/projects/vc2015/test_threads/.test_threads 2.vcxproj.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/projects/vc2015/test_threads/.test_threads.vcxproj 2.filters.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/projects/vc2017/jemalloc/.jemalloc 2.vcxproj.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/projects/vc2017/jemalloc/.jemalloc.vcxproj 2.filters.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/projects/vc2017/test_threads/.test_threads 2.vcxproj.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/projects/vc2017/test_threads/.test_threads.vcxproj 2.filters.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/test_threads/.test_threads 2.cpp.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/test_threads/.test_threads 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/msvc/test_threads/.test_threads_main 2.cpp.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/scripts/.gen_run_tests 2.py.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/scripts/.gen_travis 2.py.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.arena 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.background_thread 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.base 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.bin 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.bitmap 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.ckh 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.ctl 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.div 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.extent 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.extent_dss 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.extent_mmap 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.hash 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.hooks 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.jemalloc 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.jemalloc_cpp 2.cpp.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.large 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.log 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.malloc_io 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.mutex 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.mutex_pool 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.nstime 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.pages 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.prng 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.prof 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.rtree 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.stats 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.sz 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.tcache 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.ticker 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.tsd 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.witness 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/src/.zone 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/.test.sh 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-alti 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params11213 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params1279 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params132049 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params19937 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params216091 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params2281 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params4253 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params44497 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params607 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-params86243 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.SFMT-sse2 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.btalloc 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.extent_hooks 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.jemalloc_test.h 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.jemalloc_test_defs.h 2.in.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.math 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.mq 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.mtx 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.test 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.thd 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/include/test/.timer 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.MALLOCX_ARENA 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.aligned_alloc 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.allocated 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.extent 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.extent 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.mallocx 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.mallocx 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.overflow 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.posix_memalign 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.rallocx 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.sdallocx 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.thread_arena 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.thread_tcache_enabled 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.xallocx 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/integration/.xallocx 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.SFMT 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.btalloc 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.btalloc_0 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.btalloc_1 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.math 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.mq 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.mtx 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.test 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.thd 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/src/.timer 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/stress/.microbench 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.SFMT 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.a0 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.arena_reset 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.arena_reset_prof 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.arena_reset_prof 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.atomic 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.background_thread 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.background_thread_enable 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.base 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.bit_util 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.bitmap 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.ckh 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.decay 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.decay 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.div 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.emitter 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.extent_quantize 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.fork 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.hash 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.hooks 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.junk 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.junk 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.junk_alloc 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.junk_alloc 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.junk_free 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.junk_free 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.log 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.mallctl 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.malloc_io 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.math 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.mq 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.mtx 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.nstime 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.pack 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.pack 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.pages 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.ph 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prng 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_accum 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_accum 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_active 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_active 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_gdump 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_gdump 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_idump 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_idump 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_reset 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_reset 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_tctx 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_tctx 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_thread_name 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.prof_thread_name 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.ql 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.qr 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.rb 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.retained 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.rtree 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.size_classes 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.slab 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.smoothstep 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.spin 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.stats 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.stats_print 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.ticker 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.tsd 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.witness 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.zero 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/jemalloc/test/unit/.zero 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/linenoise/..gitignore 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/linenoise/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/linenoise/.README 2.markdown.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/linenoise/.example 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/linenoise/.linenoise 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/linenoise/.linenoise 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/.COPYRIGHT 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/.HISTORY 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/.INSTALL 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/.README 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.contents 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.cover 2.png.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.logo 2.gif.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.lua 2.css.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.lua 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.lua.1 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.luac 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.luac.1 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.manual 2.css.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.manual 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/doc/.readme 2.html.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.README 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.all 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.lua 2.hpp.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.lua 2.ico.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.lua 2.pc.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.luavs 2.bat.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.min 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.noparser 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/etc/.strict 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.fpconv 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.fpconv 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lapi 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lapi 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lauxlib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lauxlib 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lbaselib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lcode 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lcode 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ldblib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ldebug 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ldebug 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ldo 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ldo 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ldump 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lfunc 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lfunc 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lgc 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lgc 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.linit 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.liolib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.llex 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.llex 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.llimits 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lmathlib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lmem 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lmem 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.loadlib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lobject 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lobject 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lopcodes 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lopcodes 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.loslib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lparser 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lparser 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lstate 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lstate 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lstring 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lstring 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lstrlib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ltable 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ltable 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ltablib 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ltm 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.ltm 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lua 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lua 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lua_bit 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lua_cjson 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lua_cmsgpack 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lua_struct 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.luac 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.luaconf 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lualib 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lundump 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lundump 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lvm 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lvm 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lzio 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.lzio 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.print 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.strbuf 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/src/.strbuf 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.README 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.bisect 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.cf 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.echo 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.env 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.factorial 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.fib 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.fibfor 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.globals 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.hello 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.life 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.luac 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.printf 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.readonly 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.sieve 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.sort 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.table 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.trace-calls 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.trace-globals 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/deps/lua/test/.xd 2.lua.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/..gitignore 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.acl 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.adlist 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.adlist 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.ae 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.ae 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.ae_epoll 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.ae_evport 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.ae_kqueue 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.ae_select 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.anet 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.anet 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.aof 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.asciilogo 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.atomicvar 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.bio 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.bio 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.bitops 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.blocked 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.childinfo 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.cluster 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.cluster 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.config 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.config 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.connection 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.connection 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.connhelpers 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.crc16 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.crc16_slottable 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.crc64 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.crc64 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.crcspeed 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.crcspeed 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.db 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.debug 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.debugmacro 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.defrag 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.dict 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.dict 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.endianconv 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.endianconv 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.evict 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.expire 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.fmacros 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.geo 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.geo 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.geohash 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.geohash 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.geohash_helper 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.geohash_helper 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.gopher 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.help 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.hyperloglog 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.intset 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.intset 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.latency 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.latency 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.lazyfree 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.listpack 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.listpack 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.listpack_malloc 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.localtime 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.lolwut 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.lolwut 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.lolwut5 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.lolwut6 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.lzf 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.lzfP 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.lzf_c 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.lzf_d 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.memtest 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.mkreleasehdr 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.module 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.multi 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.networking 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.notify 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.object 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.pqsort 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.pqsort 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.pubsub 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.quicklist 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.quicklist 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.rand 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.rand 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.rax 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.rax 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.rax_malloc 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.rdb 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.rdb 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.redis-benchmark 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.redis-check-aof 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.redis-check-rdb 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.redis-cli 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.redis-trib 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.redisassert 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.redismodule 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.release 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.replication 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.rio 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.rio 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.scripting 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sds 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sds 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sdsalloc 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sentinel 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.server 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.server 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.setcpuaffinity 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.setproctitle 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sha1 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sha1 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sha256 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sha256 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.siphash 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.slowlog 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.slowlog 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.solarisfixes 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sort 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sparkline 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.sparkline 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.stream 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.syncio 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.t_hash 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.t_list 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.t_set 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.t_stream 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.t_string 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.t_zset 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.testhelp 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.timeout 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.tls 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.tracking 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.util 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.util 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.valgrind 2.sup.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.version 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.ziplist 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.ziplist 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.zipmap 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.zipmap 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.zmalloc 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/.zmalloc 2.h.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/..gitignore 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.gendoc 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.helloacl 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.helloblock 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.hellocluster 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.hellodict 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.hellohook 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.hellotimer 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.hellotype 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.helloworld 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/src/modules/.testmodule 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/.instances 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/.test_helper 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/assets/.default 2.conf.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/assets/.encodings 2.rdb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/assets/.hash-zipmap 2.rdb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/.cluster 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/.run 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.00-base 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.01-faildet 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.02-failover 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.03-failover-loop 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.04-resharding 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.05-slave-selection 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.06-slave-stop-cond 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.07-replica-migration 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.08-update-msg 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.09-pubsub 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.10-manual-failover 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.11-manual-takeover 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.12-replica-migration-2 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.13-no-failover-option 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.14-consistency-check 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/.15-cluster-slots 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/helpers/.onlydots 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/cluster/tests/includes/.init-tests 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/helpers/.bg_block_op 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/helpers/.bg_complex_data 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/helpers/.gen_write_load 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.aof 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.aof-race 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.block-repl 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.convert-zipmap-hash-on-load 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.logging 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.psync2 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.psync2-pingoff 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.psync2-reg 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.rdb 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.redis-cli 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.replication 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.replication-2 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.replication-3 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.replication-4 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/integration/.replication-psync 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.Makefile 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.auth 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.blockonkeys 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.commandfilter 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.datatype 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.fork 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.hooks 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.infotest 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.misc 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.propagate 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.scan 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/modules/.testrdb 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/.run 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/tests/.00-base 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/tests/.01-conf-update 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/tests/.02-slaves-reconf 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/tests/.03-runtime-reconf 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/tests/.04-slave-selection 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/tests/.05-manual 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/tests/.06-ckquorum 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/tests/.07-down-conditions 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/sentinel/tests/includes/.init-tests 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/support/.cli 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/support/.cluster 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/support/.redis 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/support/.server 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/support/.test 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/support/.tmpfile 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/support/.util 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.acl 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.aofrw 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.auth 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.bitfield 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.bitops 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.dump 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.expire 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.geo 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.hyperloglog 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.introspection 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.introspection-2 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.keyspace 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.latency-monitor 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.lazyfree 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.limits 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.maxmemory 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.memefficiency 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.multi 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.obuf-limits 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.other 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.pendingquerybuf 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.printver 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.protocol 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.pubsub 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.quit 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.scan 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.scripting 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.slowlog 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.sort 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.tls 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.tracking 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/.wait 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.auth 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.blockonkeys 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.commandfilter 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.datatype 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.fork 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.hooks 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.infotest 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.misc 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.propagate 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.scan 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/moduleapi/.testrdb 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.hash 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.incr 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.list 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.list-2 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.list-3 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.list-common 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.set 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.stream 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.stream-cgroups 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.string 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/tests/unit/type/.zset 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.build-static-symbols 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.cluster_fail_time 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.corrupt_rdb 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.gen-test-certs 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.generate-command-help 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.install_server 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.redis-copy 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.redis-sha1 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.redis_init_script 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.redis_init_script 2.tpl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.speed-regression 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.systemd-redis_multiple_servers@ 2.service.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.systemd-redis_server 2.service.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.tracking_collisions 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/.whatisdoing 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/create-cluster/..gitignore 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/create-cluster/.README 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/create-cluster/.create-cluster 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/graphs/commits-over-time/.README 2.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/graphs/commits-over-time/.genhtml 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/hashtable/.README 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/hashtable/.rehashing 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/hyperloglog/..gitignore 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/hyperloglog/.hll-err 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/hyperloglog/.hll-gnuplot-graph 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/lru/.README 2.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/lru/.lfu-simulation 2.c.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/lru/.test-lru 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/releasetools/.01_create_tarball 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/releasetools/.02_upload_tarball 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/releasetools/.03_test_release 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/releasetools/.04_release_hash 2.sh.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/releasetools/.changelog 2.tcl.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/srandmember/.README 2.md.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/srandmember/.showdist 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis-6.0.6/utils/srandmember/.showfreq 2.rb.icloud" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icons/downloadfile.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/downloadfilemeta.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdfscanner/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdfscanner/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdfscanner/analysedocument.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdfscanner/analysedocument.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdfscanner/analysisresult.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdfscanner/analysisresult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdfscanner/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdfscanner/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdfscanner/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdfscanner/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdfscanner/settingspage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdfscanner/settingspage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pdfscanner/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pdfscanner/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webappproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/webappproject/urls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1dUp4fQJSeTWAnfiQGDMGVa2Bx1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/icons" />
+      <recent name="$PROJECT_DIR$/static/javascript" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Modules" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/javascript" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/icons" />
+      <recent name="$PROJECT_DIR$/templates/pdfscanner" />
+      <recent name="$PROJECT_DIR$/Modules" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="webapp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3dc67fd6-9cfe-4456-acfc-2723d6855fcb" name="Default Changelist" comment="" />
+      <created>1592489335829</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592489335829</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="462" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598210445147">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="462" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1598210445147" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595631405001">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1595631405001" />
+    <state x="454" y="380" key="FileChooserDialogImpl" timestamp="1599355058490">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="454" y="380" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1599355058490" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1598340517427">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598340517427" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1598094248220" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1598340517422">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598340517422" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1598094248217" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1598340517421">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598340517421" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1598094248216" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1598340517423">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598340517423" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1598094248219" />
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1597558692492">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597558692492" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1597558692489">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1597558692489" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1597558692488">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1597558692488" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1597558692491">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1597558692491" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1601392128107">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601392128107" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1595456362749">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1595456362749" />
+    <state x="427" y="82" width="586" height="735" key="find.popup" timestamp="1599448835247">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="427" y="82" width="586" height="735" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1599448835247" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597105504995">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597105504995" />
+    <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601206687002">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900@0.0.1440.900" timestamp="1601206687002" />
+  </component>
+</project>

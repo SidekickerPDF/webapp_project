@@ -1,0 +1,1 @@
+-Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/rashbir/opt/anaconda3/envs/newwebapp/lib -L/Users/rashbir/opt/anaconda3/envs/newwebapp/lib

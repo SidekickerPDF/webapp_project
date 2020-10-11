@@ -206,15 +206,22 @@ def documentsview(request):
 
 
         ## check if user want highligh overlapping
-        overlap = request.POST.getlist('overlap')
-        if len(overlap) > 0:
-            overlap = checkboxcheck(overlap[0])
-        else:
+
+        if 'overlap' in request.POST.dict():
+            overlap = 1
+        elif ('overlap' not in request.POST.dict()) and (request.session['overlap'] == 1):
             overlap = 0
+        else:
+            overlap = 1
         request.session['overlap'] = overlap  ## Setting session value for the overlap
 
         ## check if user wants to use valid name detection
+        filtername = 0
+        if 'filtername' in request.session:
+            filtername = request.session['filtername']
         if 'filtername' in request.POST.dict():
+            filtername = 1
+        elif ('filtername' not in request.POST.dict()) and (filtername == 1):
             filtername = 0
         else:
             filtername = 1
@@ -310,8 +317,17 @@ def analysisresult(request):
                     resultDict['d'][key] = dict(sorted(resultDict['d'][key].items(), key=lambda x: x[0]))
 
                 elif key == 'NUMBER':
+                    for k,v in list(resultDict['d'][key].items()):
+                        if k.count(".") > 1:
+                            resultDict['d'][key].pop(k)
+                            continue
+                        try:
+                            float(k)
+                        except:
+                            resultDict['d'][key].pop(k)
                     resultDict['d'][key] = dict(
-                        sorted(resultDict['d'][key].items(), key=lambda x: float(re.sub('\D+', '', x[0]))))
+                        sorted(resultDict['d'][key].items(), key=lambda x: float(x[0])))
+                        # sorted(resultDict['d'][key].items(), key=lambda x: float(re.sub('\d+.\d+', '', x[0]))))
                 #     .\d+.{1,2}$
 
                 ##TODO: Manage highlighting of date
@@ -361,7 +377,8 @@ def analysisresult(request):
                        'documentslist': documentslist,
                        'listofkeys': list(resultDict['d'].keys()),
                        "NumberOfCat": len(resultDict['d'].keys()),
-                       'NumberOfValues': numberofvalues(resultDict['d'])})
+                       'NumberOfValues': numberofvalues(resultDict['d']),
+                       'NumberOfFiles': len(absolutedocumentlist)})
 
 def numberofvalues(dicti):
     i = 0

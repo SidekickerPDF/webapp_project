@@ -2,13 +2,13 @@
 from __future__ import unicode_literals, print_function
 import json
 import fitz
-import regex
 import inspect
 import spacy
 import xlsxwriter
 import datetime
 import dateparser
 import os
+import regex
 import re
 import probablepeople as pp
 import itertools
@@ -68,6 +68,7 @@ patternRegexSimpleDate = regex.compile(regexSimpleDate)
 
 for key in regexGeneric:
     regexGeneric[key] = regex.compile(regexGeneric[key],regex.MULTILINE)
+    # regexGeneric[key] = regexGeneric[key]
 
 def common(a, b):
     str1_words = set(a.split())
@@ -128,7 +129,6 @@ def Highlight_Analyse(self, lst, ColorDict, savePDF, saveExcel, saveExcelUVO, la
         if filtername == 1:  # Checking if filtername is set to true
             if "PERSON" in d.keys():
                 for name, v in list(d["PERSON"].items()):
-                    print("'"+name+"'")
                 # for name in list(d[key]):
                     if re.sub(" ", "", name).isalpha() == False:
                         d["PERSON"].pop(name)
@@ -140,10 +140,24 @@ def Highlight_Analyse(self, lst, ColorDict, savePDF, saveExcel, saveExcelUVO, la
         if "LAW" in d.keys():
             for key, v in list(d["LAW"].items()):
                 print(key)
-                d["LAW"][re.sub('the ', "", key)] = d["LAW"].pop(key)
+                if 'the ' in key:
+                    d["LAW"][re.sub('the ', "", key)] = d["LAW"].pop(key)
+                    continue
+                if 'The ' in key:
+                    d["LAW"][re.sub('The ', "", key)] = d["LAW"].pop(key)
+                    continue
+
+            for key, v in list(d["LAW"].items()):
+                d["LAW"][key.strip()] = d["LAW"].pop(key)
+
+        if "ORG" in d.keys():
+            for key, v in list(d["ORG"].items()):
+                if "'s" in key:
+                    d["LAW"][re.sub("'s", "", key)] = d["ORG"].pop(key)
+
+
 
         if overlap == 1:  # If user do not want to overlap(Checkbox unticked)
-            print(prioritydict)
             for com in itertools.combinations(prioritydict.keys(), 2):
                 if (com[0] in d) & (com[1] in d):
                     for k in list(d[com[0]].keys()):
@@ -267,7 +281,7 @@ def PDF2DictList(input_pdf):
                     regexGenericSentenceDict[SearchType] = regexGenericSentenceDict.get(SearchType, [])
                     for match in matchlist:
                         match.replace('\n','').replace('\u00b7','')
-                        
+
                         newDict[match] = [(filename,pageCounter, sentenceCounter, str(sentence), input_pdf)]
 
                     regexGenericSentenceDict[SearchType] = newDict
@@ -365,7 +379,7 @@ def markup(input_pdf, DocDictListInstance, ColorDict, debug):
     Y1[input_pdf]={}
     LineNumbers[input_pdf] = {}
     pageCounter = 0
-
+    listSearchText = []
     doc = fitz.open(input_pdf)
     for page in doc:
 
@@ -383,14 +397,16 @@ def markup(input_pdf, DocDictListInstance, ColorDict, debug):
 
             for k2 in value:
                 SearchText = k2
+                listSearchText.append(SearchText)
                 # TODO: Manage Number overlapping more accurately
                 if SearchText.isdigit():
                     SearchText = " " + SearchText + " "
-                for lst in value[k2]:
-
-                    if lst[1] == pageCounter:
-
-                        if ColorDict[key][3]: page=annotate(input_pdf, page, SearchText, key, "", ColorDict, debug)
+                print(SearchText)
+                if listSearchText.count(SearchText) < 2:
+                    print("annotate ------>" + SearchText)
+                    for lst in value[k2]:
+                        if lst[1] == pageCounter:
+                            if ColorDict[key][3]: page=annotate(input_pdf, page, SearchText, key, "", ColorDict, debug)
 
         LineNumbers[input_pdf][page] = CompileListofLineNumbers(Y0, Y1, input_pdf, page)
     return(doc)

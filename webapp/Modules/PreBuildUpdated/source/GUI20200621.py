@@ -290,25 +290,37 @@ def pdfannot2df(input_pdf, outputFileName, debug):
     context = ""
     contentDict = {}
     for ixpage, page in enumerate(pdf):
-        tmp = {'page': ixpage + 1, 'pdf_path': input_pdf, 'page_width': page.rect[2], 'page_height': page.rect[3]}
+        print(page)
+        tmp = {'Page': ixpage + 1, 'File': input_pdf}
+        ##        tmp = {'page': ixpage + 1, 'pdf_path': input_pdf, 'page_width': page.rect[2], 'page_height': page.rect[3]}
         words = page.getTextWords()
         annot = page.firstAnnot
-
+        print('annot : ', annot) if debug else 0
+        print('page : ', ixpage) if debug else 0
         while annot:
+            print('type annot : ', annot.type[1]) if debug else 0
             mywords = []
             date1, date2, content, context = "", "", "", ""
 
             if annot.type[1] == 'Highlight':
                 mywords, annot = _extract_word_from_highlight(annot, words)
 
-            # need to build functionality here that would concatenate results from closely adjacent annotations of the same type - trouble is that 'closely adjacent' will depend on the text size
+            elif annot.type[1] == 'Squiggly':
+                mywords, annot = _extract_word_from_highlight(annot, words)
+
+            elif annot.type[1] == 'Underline':
+                mywords, annot = _extract_word_from_highlight(annot, words)
 
             elif annot.type[1] == 'Square':
-                mywords = [w for w in words if
-                           annot.rect.intersect(fitz.Rect(w[:4])).getRectArea() / fitz.Rect(w[:4]).getRectArea() > 0.6]
+                try:
+                    mywords = [w for w in words if fitz.Rect(w[:4]).intersects(annot.rect)]
+                except:
+                    mywords = ""
+
+            # helpful to build functionality here that would concatenate results from closely adjacent annotations of the same type - trouble is that 'closely adjacent' will depend on the text size
 
             else:
-                print('encountered an annotation different from "Square" and "Highlights".') if debug else 0
+                print("Encountered an unknown annotation type.") if debug else 0
 
             annot_text = " ".join(w[4] for w in mywords)
 
@@ -319,76 +331,123 @@ def pdfannot2df(input_pdf, outputFileName, debug):
 
             # unpack dict in annot.info['content'] field
 
-            content = annot.info['content']
-            print("content: " + content) if debug else 0
-
-            ##            json_acceptable_content = content.replace("'", "\"")
-            ##            contentDict = json.loads(json_acceptable_content)
-
-            if content != "":
-                print("in content loop") if debug else 0
-                try:
-                    contentDict = eval(content)
-                    if contentDict["date"]["values"][0]["type"] == "daterange":
-                        date1 = contentDict["date"]["values"][0]["start"]
-                        date2 = contentDict["date"]["values"][0]["end"]
-                    elif contentDict["date"]["values"][0]["type"] == "date":
-                        date1 = contentDict["date"]["values"][0]["value"]
-                    context = contentDict["context"]
-                except:
-                    print("exception") if debug else 0
-
+            ##            content = annot.info['content']
+            ##
+            ##            print("content: "+content)if debug else 0
+            ##
+            ####            json_acceptable_content = content.replace("'", "\"")
+            ####            contentDict = json.loads(json_acceptable_content)
+            ##
+            ##            if content != "":
+            ##                print ("in content loop")if debug else 0
+            ##                try:
+            ##                    contentDict = eval(content)
+            ##                    print("contentDict: ",contentDict)if debug else 0
+            ##                    if contentDict["date"]["values"][0]["type"] == "daterange":
+            ##                        date1 = contentDict["date"]["values"][0]["start"]
+            ##                        date2 = contentDict["date"]["values"][0]["end"]
+            ##                    elif contentDict["date"]["values"][0]["type"] == "date":
+            ##                        date1 = contentDict["date"]["values"][0]["value"]
+            ##                    context = contentDict["context"]
+            ##                except:
+            ##                    print ("exception")if debug else 0
+            ##
             ##  are there any other types of dates in the MS_Recognizer output?
 
             # get RGB triple of annot color
 
-            try:
-                lst = (round(annot.colors['stroke'][0], 2), round(annot.colors['stroke'][1], 2),
+            lst = (round(annot.colors['stroke'][0], 2), round(annot.colors['stroke'][1], 2),
                    round(annot.colors['stroke'][2], 2))
-            except:
-                lst = 0
+            colorKey = InvColorDicttoLabels[lst]
+            ##            print("colorKey[:6]",colorKey[:6])
+            if colorKey[:6] == "Manual":
+                colorKey = "HIGHLIGHTS"
+            ##            print(lst)
+            ##            print(InvColorDicttoLabels)
+
             # update tmp dictionary
 
             if (lst) in InvColorDicttoLabels:
-                tmp.update({'x': int(annot.rect[0]), 'y': int(annot.rect[1]),
-                            # Those might be wrong for multi line highlights as the rect only
-                            # correspond to the one of the last line
-                            'w': int(annot.rect[2] - annot.rect[0]), 'h': int(annot.rect[3] - annot.rect[1]),
-                            'type': annot.type[1], 'label': annot.info['content'], \
-                            'color': annot.colors['stroke'],
-                            'colorName': InvColorDicttoNames[lst], 'colorKey': InvColorDicttoLabels[lst],
-                            'order': order, 'text': annot_text, 'date1': date1, 'date2': date2, 'context': context})
+                tmp.update({ \
+                    ##                    'x': int(annot.rect[0]), 'y': int(annot.rect[1]),
+                    ##                        # Those might be wrong for multi line highlights as the rect only
+                    ##                        # correspond to the one of the last line
+                    ##                        'w': int(annot.rect[2] - annot.rect[0]), 'h': int(annot.rect[3] - annot.rect[1]),\
+                    'Term': annot_text, \
+                    'Sentence': 0, \
+                    'Context': "", \
+                    'Note': annot.info['content'], \
+                    'Type': annot.type[1], \
+                    'color': lst, \
+                    'Hyperlink': input_pdf,
+
+                    ##                            'color':annot.colors['stroke'],
+                    ##                            'ColorName':InvColorDicttoNames[lst], \
+                    'colorKey': colorKey, \
+                    'order': order, \
+                    ##                            'date1': date1, 'date2': date2, 'context':context\
+                })
             else:
-                tmp.update({'x': int(annot.rect[0]), 'y': int(annot.rect[1]), 'w': int(annot.rect[2] - annot.rect[0]),
-                            'h': int(annot.rect[3] - annot.rect[1]), 'type': annot.type[1], \
-                            'label': annot.info['content'], 'color': annot.colors['stroke'],
-                            'colorName': "Unknown", 'colorKey': "Unknown", 'order': order,
-                            'text': annot_text, 'date1': date1, 'date2': date2, 'context': context})
+                tmp.update({ \
+                    ##                    'x': int(annot.rect[0]), 'y': int(annot.rect[1]),
+                    ##                        # Those might be wrong for multi line highlights as the rect only
+                    ##                        # correspond to the one of the last line
+                    ##                        'w': int(annot.rect[2] - annot.rect[0]), 'h': int(annot.rect[3] - annot.rect[1]),\
+                    'Term': annot_text, \
+                    'Sentence': 0, \
+                    'Context': "", \
+                    'Note': annot.info['content'], \
+                    'Type': annot.type[1], \
+                    'color': lst, \
+                    'Hyperlink': input_pdf,
+
+                    ##                            'color':annot.colors['stroke'],
+                    ##                            'ColorName':"Unknown", \
+                    'colorKey': "Unknown", \
+                    'order': order, \
+                    ##                            'date1': date1, 'date2': date2, 'context':context\
+                })
+            ##                tmp.update({\
+            ##                    'x': int(annot.rect[0]), 'y': int(annot.rect[1]),'w': int(annot.rect[2] - annot.rect[0]), 'h': int(annot.rect[3] - annot.rect[1]),\
+            ##                    'type': annot.type[1], \
+            ##                            'note': annot.info['content'], 'color':annot.colors['stroke'],'colorName':"Unknown", 'colorKey':"Unknown",'order': order, 'text': annot_text, 'date1': date1, 'date2': date2, 'context':context})
+            ##            print (tmp)
             print(tmp) if debug else 0
             l.append(deepcopy(tmp))
-
             annot = annot.next
 
+    print("l is: " + str(l))
     adf = pandas.DataFrame(l)
     print('adf : ', adf) if debug else 0
     successText, failureText, failure2Text = "", "", ""
+
     if adf.empty:
-        print(f'WARNING : the document {input_pdf} does not contain any annotations, the returned dataframe is empty.')
+        print(f'The document {input_pdf} does not contain any annotations.')
         failureText = input_pdf
 
-    elif adf[adf['type'].isnull()].shape[0]:
-        raise Exception(f'Missing {adf[adf["type"].isnull()].shape[0]} type annotation(s) in {input_pdf}')
-        failure2Text = input_pdf
+    ##    elif True:
+    ##        try:
+    ##            boo = adf[adf.get('type').isnull()].shape[0]
+    ##            if adf[adf.get('type').isnull()].shape[0]:
+    ##                raise Exception(f'Missing {adf[adf["type"].isnull()].shape[0]} type annotation(s) in {input_pdf}')
+    ##                failure2Text = input_pdf
+    ##         except:
+    ##            0
 
     else:
-        final_columns = ['order', 'page', 'x', 'y', 'w', 'h', 'type', 'label', 'color', 'colorName', 'colorKey',
-                         'page_height', 'page_width', 'pdf_path', 'text', 'date1', 'date2', 'context']
+
+        ## need to capture and insert line number (or sentence number)
+
+        final_columns = ["Term", "File", "Page", "Sentence", "Context", "Note", "Type", "color", "colorKey",
+                         "Hyperlink"]
+        ##        final_columns = ['page', 'type', 'text', 'note', 'color', 'colorName', 'colorKey', 'date1', 'date2']
+        ##        final_columns = ['order', 'page', 'x', 'y', 'w', 'h', 'type', 'label', 'color', 'colorName', 'colorKey', 'page_height', 'page_width','pdf_path', 'text', 'date1', 'date2', 'context']
         adf = adf[final_columns]
 
         ##Export each group of highlights to a separate sheet
         colorKeys = adf['colorKey'].unique().tolist()
         if debug: print("165")
-        writer = pandas.ExcelWriter("AvaliableHL.xlsx", engine='xlsxwriter')
+        writer = pandas.ExcelWriter(outputFileName, engine='xlsxwriter')
         for color in colorKeys:
             mydf = adf.loc[adf.colorKey == color]
             mydf.to_excel(writer, sheet_name=color)

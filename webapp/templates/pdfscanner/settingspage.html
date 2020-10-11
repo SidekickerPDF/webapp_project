@@ -36,7 +36,7 @@
 <main>
     <div class="jumbotron">
         <form class="" action="settingspage" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
+        {% csrf_token %}selected
     <table class="table" style="font-size: 14px; text-align:center;">
 <!-- ADDRESS -->
         <tr>
@@ -51,7 +51,7 @@
          <td><input type="radio" id="addressSquigglyunderline" name="addresshighlightstyle" value="Squiggly underline"></td>
           <td> <select name="addressprior" id="addressprior">
                   <option value="1">1</option>
-                  <option value="2">2</option>
+                  <option value="2" >2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
@@ -114,7 +114,7 @@
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                  <option value="6">6</option>
+                  <option value="6" selected>6</option>
                   <option value="7">7</option>
                   <option value="8">8</option>
                   <option value="9">9</option>
@@ -168,7 +168,7 @@
           <td><input type="radio" id="caselawRectangle" name="caselawhighlightstyle" value="Rectangle"></td>
           <td><input type="radio" id="caselawSquigglyunderline" name="caselawhighlightstyle" value="Squiggly underline"></td>
           <td> <select name="caselawprior" id="caselawprior">
-                  <option value="1">1</option>
+                  <option value="1" selected>1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -227,7 +227,7 @@
           <td><input type="radio" id="courtRectangle" name="courthighlightstyle" value="Rectangle"></td>
           <td><input type="radio" id="courtSquigglyunderline" name="courthighlightstyle" value="Squiggly underline"></td>
           <td> <select name="courtprior" id="courtprior">
-                  <option value="1">1</option>
+                  <option value="1" selected>1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -290,7 +290,7 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="4" selected>4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
@@ -346,7 +346,7 @@
           <td><input type="radio" id="emailRectangle" name="emailhighlightstyle" value="Rectangle"></td>
           <td><input type="radio" id="emailSquigglyunderline" name="emailhighlightstyle" value="Squiggly underline"></td>
           <td> <select name="emailprior" id="emailprior">
-                  <option value="1">1</option>
+                  <option value="1" selected>1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -408,7 +408,7 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="4" selected>4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
@@ -472,7 +472,7 @@
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
-                  <option value="8">8</option>
+                  <option value="8" selected>8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
                   <option value="11">11</option>
@@ -525,7 +525,7 @@
           <td><input type="radio" id="lawRectangle" name="lawhighlightstyle" value="Rectangle"></td>
           <td><input type="radio" id="lawSquigglyunderline" name="lawhighlightstyle" value="Squiggly underline"></td>
           <td> <select name="lawprior" id="lawprior">
-                  <option value="1">1</option>
+                  <option value="1" selected>1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -587,7 +587,7 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="4" selected>4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
@@ -650,7 +650,7 @@
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
-                  <option value="8">8</option>
+                  <option value="8" selected>8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
                   <option value="11">11</option>
@@ -705,7 +705,7 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="4" selected>4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
@@ -763,7 +763,7 @@
           <td> <select name="orgprior" id="orgprior">
                   <option value="1">1</option>
                   <option value="2">2</option>
-                  <option value="3">3</option>
+                  <option value="3" selected>3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
@@ -822,7 +822,7 @@
           <td> <select name="personprior" id="personprior">
                   <option value="1">1</option>
                   <option value="2">2</option>
-                  <option value="3">3</option>
+                  <option value="3" selected>3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
@@ -881,7 +881,7 @@
           <td> <select name="phoneprior" id="phoneprior">
                   <option value="1">1</option>
                   <option value="2">2</option>
-                  <option value="3">3</option>
+                  <option value="3" selected>3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
@@ -946,7 +946,7 @@
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
-                  <option value="8">8</option>
+                  <option value="8" selected>8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
                   <option value="11">11</option>
@@ -1006,7 +1006,7 @@
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
-                  <option value="8">8</option>
+                  <option value="8" selected>8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
                   <option value="11">11</option>
@@ -1058,7 +1058,7 @@
           <td><input type="radio" id="redactedRectangle" name="redactedhighlightstyle" value="Rectangle"></td>
           <td><input type="radio" id="redactedSquigglyunderline" name="redactedhighlightstyle" value="Squiggly underline"></td>
           <td> <select name="redactedprior" id="redactedprior">
-                  <option value="1">1</option>
+                  <option value="1" selected>1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -1120,7 +1120,7 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="4" selected>4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
                   <option value="7">7</option>
@@ -1195,7 +1195,7 @@
                   <option value="17">17</option>
                   <option value="18">18</option>
                   <option value="19">19</option>
-                  <option value="20">20</option> </select>
+                  <option value="20" selected>20</option> </select>
           </td>
           <td><select name="wordcolor" id="wordcolor" onchange="updateCustomColor(this, 'customwordcolor')">
             <option value="Grey" selected>Grey</option>
@@ -1314,7 +1314,7 @@
     document.getElementById('barprior').value = '6';
     document.getElementById('caselawprior').value = '1';
     document.getElementById('courtprior').value = '1';
-    document.getElementById('dateprior').value = '1';
+    document.getElementById('dateprior').value = '4';
     document.getElementById('emailprior').value = '1';
     document.getElementById('judgeprior').value = '4';
     document.getElementById('keypointprior').value = '8';
@@ -1328,7 +1328,7 @@
     document.getElementById('positivepointprior').value = '8';
     document.getElementById('quoteprior').value = '8';
     document.getElementById('redactedprior').value = '1';
-    document.getElementById('timeprior').value = '3';
+    document.getElementById('timeprior').value = '4';
     document.getElementById('wordprior').value = '20';
 
   document.getElementById('addresscheck').checked = true;

@@ -26,7 +26,7 @@
           <tr>
               <td><a onmouseover="infoP('Filter and find out if the categorised name is valid or not')"
                      onmouseout="HideinfoP()"
-                     href="#">Filter valid name</a></td>
+                     href="#">Remove filter valid name</a></td>
               <td><input type="checkbox" name="filtername"></td>
           </tr>
           <input type="hidden" name="sortdata" checked>
@@ -217,6 +217,7 @@
 
 
       <!-- Analysis result tree view -->
+      <h6 style="text-align: center;"> Found {{ NumberOfCat }} Categories and {{ NumberOfValues }} of Values.</h6>
     <h4 style="align:center;"> Analysis Result </h4>
      <input type="text" id="myInput" class="clickme" onkeyup="searchFunction()"
      style="width:100%;

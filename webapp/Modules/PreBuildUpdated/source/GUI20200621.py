@@ -112,13 +112,33 @@ def ExporttoPDF(overlap, prioritydict):
     for file in file_sel_list:
         d2 = results[tuple(file_sel_list)][2]
 
-        if overlap == 0:
+        if overlap == 1:
 #### REMOVE OVERLAPPING HIGHLIGHTS
             for pageno in range(len(d2[file])):
                 for com in itertools.combinations(prioritydict.keys(), 2):
                     if (com[0] in d2[file][pageno]) and (com[1] in d2[file][pageno]):
                         for k in list(d2[file][pageno][com[0]].keys()):
-                            if k in list(d2[file][pageno][com[1]].keys()):
+                            for k2 in list(d2[file][pageno][com[1]].keys()):
+                                if common(k, k2):
+                                    # noinspection PyPackageRequirements
+                                    if prioritydict[com[0]] > prioritydict[com[1]]:
+                                        try: d2[file][pageno][com[0]].pop(k)
+                                        except: pass
+                                    elif prioritydict[com[0]] < prioritydict[com[1]]:
+                                        try: d2[file][pageno][com[1]].pop(k2)
+                                        except: pass
+
+                            for k2 in list(d2[file][pageno][com[0]].keys()):
+                                if common(k, k2):
+                                        if prioritydict[com[0]] > prioritydict[com[1]]:
+                                            try: d2[file][pageno][com[0]].pop(k)
+                                            except: pass
+                                        elif prioritydict[com[0]] < prioritydict[com[1]]:
+                                            try: d2[file][pageno][com[1]].pop(k2)
+                                            except: pass
+
+                        for k in list(d2[file][pageno][com[1]].keys()):
+                            if k in list(d2[file][pageno][com[0]].keys()):
                                 # noinspection PyPackageRequirements
                                 if prioritydict[com[0]] > prioritydict[com[1]]:
                                     try: d2[file][pageno][com[0]].pop(k)
@@ -127,7 +147,7 @@ def ExporttoPDF(overlap, prioritydict):
                                     try: d2[file][pageno][com[1]].pop(k)
                                     except: pass
 
-                            if k in list(d2[file][pageno][com[0]].keys()):
+                            if k in list(d2[file][pageno][com[1]].keys()):
                                 if prioritydict[com[0]] > prioritydict[com[1]]:
                                     try: d2[file][pageno][com[0]].pop(k)
                                     except: pass
@@ -309,7 +329,6 @@ def pdfannot2df(input_pdf, outputFileName, debug):
                 print("in content loop") if debug else 0
                 try:
                     contentDict = eval(content)
-                    print("contentDict: ", contentDict) if debug else 0
                     if contentDict["date"]["values"][0]["type"] == "daterange":
                         date1 = contentDict["date"]["values"][0]["start"]
                         date2 = contentDict["date"]["values"][0]["end"]
@@ -381,7 +400,7 @@ def pdfannot2df(input_pdf, outputFileName, debug):
 
 
 @shared_task(bind=True)
-def analyse_file_webapp(self, lst, overlap, prioritydict):
+def analyse_file_webapp(self, lst, filtername, overlap, prioritydict):
     global file, docs, results, debug, file_list, file_sel_list, d, DocDict, DocDictList, textSentencesDict, InvColorDictLabelstoColors
 
 
@@ -394,33 +413,12 @@ def analyse_file_webapp(self, lst, overlap, prioritydict):
             results = {}
             break
     #if not tuple(lst) in results:
-    returndata = Highlight_Analyse.delay(lst, InvColorDictLabelstoColors, False, False, False, False, False)
+    returndata = Highlight_Analyse.delay(lst, InvColorDictLabelstoColors, False, False, False, False, False, filtername,
+                                         overlap, prioritydict)
     # returndata = Highlight_Analyse(lst, InvColorDictLabelstoColors, False, False, False, False, False)
     results[tuple(lst)] = returndata.get()
+
     d = results[tuple(lst)][0]
-
-
-    #### to manage overlapping of highlights
-    if overlap == 0: # If user do not want to overlap(Checkbox unticked)
-        for com in itertools.combinations(prioritydict.keys(), 2):
-            if (com[0] in d) and (com[1] in d):
-                for k in list(d[com[0]].keys()):
-                    if k in list(d[com[1]].keys()):
-                        if prioritydict[com[0]] > prioritydict[com[1]]:
-                            try: d[com[0]].pop(k)
-                            except: pass
-                        elif prioritydict[com[0]] < prioritydict[com[1]]:
-                            try: d[com[1]].pop(k)
-                            except: pass
-
-                    if k in list(d[com[0]].keys()):
-                        if prioritydict[com[0]] > prioritydict[com[1]]:
-                            try: d[com[0]].pop(k)
-                            except: pass
-                        elif prioritydict[com[0]] < prioritydict[com[1]]:
-                            try: d[com[1]].pop(k)
-                            except: pass
-
     DocDict = results[tuple(lst)][1]
     DocDictList = results[tuple(lst)][2]
     textSentencesDict = results[tuple(lst)][3]
@@ -461,13 +459,8 @@ All unique terms are listed in WORD, firstly capitalised terms then non-capitali
     addIntroSheet(workbook, introText, bold, top, wrap, timestr, date_time_format, file_sel_list,exportHyperlinks )
     workbook.close()
 
-@shared_task(bind=True)
-def test(self, lst, InvColorDictLabelstoColors):
-    result = Highlight_Analyse.delay(lst, InvColorDictLabelstoColors, False, False, False, False, False)
-    return result
 
-
-def analyse_file_webapp_shared_task(lst, overlap, prioritydict, task_id):
+def analyse_file_webapp_shared_task(lst, overlap, filtername, prioritydict, task_id):
     global file, docs, results, debug, file_list, file_sel_list, d, DocDict, DocDictList, textSentencesDict, InvColorDictLabelstoColors
 
     for value in prioritydict.values():
@@ -480,7 +473,7 @@ def analyse_file_webapp_shared_task(lst, overlap, prioritydict, task_id):
 
 
     #### to manage overlapping of highlights
-    if overlap == 0: # If user do not want to overlap(Checkbox unticked)
+    if overlap == 1: # If user do not want to overlap(Checkbox unticked)
         for com in itertools.combinations(prioritydict.keys(), 2):
             if com in d:
                 for k in list(d[com[0]].keys()):

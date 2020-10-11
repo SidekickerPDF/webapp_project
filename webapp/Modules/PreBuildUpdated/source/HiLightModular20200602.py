@@ -10,6 +10,8 @@ import datetime
 import dateparser
 import os
 import re
+import probablepeople as pp
+import itertools
 from pprint import pprint
 
 #Need to update this to link to the correct colorsDict
@@ -27,7 +29,7 @@ from celery_progress.backend import ProgressRecorder
 
 now = datetime.datetime.now()
 nlp = spacy.load("en_blackstone_proto")
-nlp2 = spacy.load("en_core_web_sm")
+nlp2 = spacy.load("en_core_web_lg")
 # nlp = spacy.load("en_core_web_sm")
 # nlp = en_core_web_sm.load()
 
@@ -67,10 +69,21 @@ patternRegexSimpleDate = regex.compile(regexSimpleDate)
 for key in regexGeneric:
     regexGeneric[key] = regex.compile(regexGeneric[key],regex.MULTILINE)
 
+def common(a, b):
+    str1_words = set(a.split())
+    str2_words = set(b.split())
+
+    if str1_words & str2_words:
+        return True
+    else:
+        return False
+
 @shared_task(bind=True)
-def Highlight_Analyse(self, lst, ColorDict, savePDF, saveExcel, saveExcelUVO, label, debug):
+def Highlight_Analyse(self, lst, ColorDict, savePDF, saveExcel, saveExcelUVO, label, debug, filtername,
+                      overlap, prioritydict):
     global LineNumbers
     import time
+
     d = {}
     DocDict = {}
     DocDictList = {}
@@ -94,20 +107,15 @@ def Highlight_Analyse(self, lst, ColorDict, savePDF, saveExcel, saveExcelUVO, la
         for k, v in list(pdl2[0][0].items()):
             if (k == "INSTRUMENT") or (k == "PROVISION"):
                 if "LAW" in pdl2[0][0].keys():
-                    pdl2[0][0][re.sub("the ", "", [k])] = pdl2[0][0].pop(k)
-                    k = re.sub("the ", "", [k])
                     pdl2[0][0]["LAW"].update(pdl2[0][0][k])
                     pdl2[0][0].pop(k)
-                    for key, v in pdl2[0][0]["LAW"].items():
-                        pdl2[0][0]["LAW"][re.sub('the ', "", key.lower())] = pdl2[0][0]["LAW"].pop(key)
-                        print(pdl2[0][0]["LAW"][key])
 
                 else:
                     pdl2[0][0]["LAW"] = pdl2[0][0][k]
                     pdl2[0][0].pop(k)
-                    for key, v in pdl2[0][0]["LAW"].items():
-                        pdl2[0][0]["LAW"][re.sub('the ', "", key.lower())] = pdl2[0][0]["LAW"].pop(key)
-                        print(pdl2[0][0]["LAW"][key])
+
+
+
             # if (k == "NUMBER"):
             #     for Numberkey, Numbervalue in pdl2[0][0]["NUMBER"].items():
             #         print(Numberkey)
@@ -116,6 +124,55 @@ def Highlight_Analyse(self, lst, ColorDict, savePDF, saveExcel, saveExcelUVO, la
         textSentencesDict[input_pdf] = pdl2[1]
         DocDict[input_pdf] = MergeList2Dict(DocDictList[input_pdf], debug)
         d = merge(d, DocDict[input_pdf], strategy=Strategy.ADDITIVE)
+
+        if filtername == 1:  # Checking if filtername is set to true
+            if "PERSON" in d.keys():
+                for name, v in list(d["PERSON"].items()):
+                    print("'"+name+"'")
+                # for name in list(d[key]):
+                    if re.sub(" ", "", name).isalpha() == False:
+                        d["PERSON"].pop(name)
+                    elif pp.tag(name)[1] != 'Person':
+                        d["PERSON"].pop(name)
+                    elif len(name) < 4:
+                        d["PERSON"].pop(name)
+
+        if "LAW" in d.keys():
+            for key, v in list(d["LAW"].items()):
+                print(key)
+                d["LAW"][re.sub('the ', "", key)] = d["LAW"].pop(key)
+
+        if overlap == 1:  # If user do not want to overlap(Checkbox unticked)
+            print(prioritydict)
+            for com in itertools.combinations(prioritydict.keys(), 2):
+                if (com[0] in d) & (com[1] in d):
+                    for k in list(d[com[0]].keys()):
+                        for k2 in list(d[com[1]].keys()):
+                            if common(k, k2):
+                                if prioritydict[com[0]] > prioritydict[com[1]]:
+                                    try:
+                                        d[com[0]].pop(k)
+                                    except:
+                                        pass
+                                elif prioritydict[com[0]] < prioritydict[com[1]]:
+                                    try:
+                                        d[com[1]].pop(k2)
+                                    except:
+                                        pass
+                        for k2 in list(d[com[0]].keys()):
+                            if common(k, k2):
+                                if prioritydict[com[0]] > prioritydict[com[1]]:
+                                    try:
+                                        d[com[0]].pop(k)
+                                    except:
+                                        pass
+                                elif prioritydict[com[0]] < prioritydict[com[1]]:
+                                    try:
+                                        d[com[1]].pop(k2)
+                                    except:
+                                        pass
+
+
 
         if savePDF:
             

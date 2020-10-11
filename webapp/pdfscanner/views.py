@@ -215,9 +215,9 @@ def documentsview(request):
 
         ## check if user wants to use valid name detection
         if 'filtername' in request.POST.dict():
-            filtername = checkboxcheck(request.POST.getlist('filtername')[0])
-        else:
             filtername = 0
+        else:
+            filtername = 1
 
         ## check if user wants sort the data or not
         sortdata = 1
@@ -273,11 +273,10 @@ def documentsview(request):
 
         # resultDict = gui.analyse_file_webapp(absolutedocumentlist, overlap, prioritydict)
         resulttask = gui.Highlight_Analyse.delay(absolutedocumentlist, gui.InvColorDictLabelstoColors, False, False,
-                                                 False, False, False)
+                                                 False, False, False, filtername, overlap, prioritydict)
 
         request.session['sortdata'] = sortdata
         request.session['filtername'] = filtername
-        request.session['overlap'] = overlap
         request.session['prioritydict'] = prioritydict
         request.session['documentslist'] = documentslist
         request.session['absolutedocumentlist'] = absolutedocumentlist
@@ -302,7 +301,7 @@ def analysisresult(request):
         datekeeper = {}
         request.session['datekeeper'] = {}
 
-        resultDict = gui.analyse_file_webapp_shared_task(absolutedocumentlist, overlap, prioritydict, resulttask)
+        resultDict = gui.analyse_file_webapp_shared_task(absolutedocumentlist, overlap, filtername, prioritydict, resulttask)
 
         if sortdata == 1:  # Checking if sortdata is set to true
             resultDict['d'] = dict(sorted(resultDict['d'].items(), key=lambda x: x[0]))
@@ -313,6 +312,7 @@ def analysisresult(request):
                 elif key == 'NUMBER':
                     resultDict['d'][key] = dict(
                         sorted(resultDict['d'][key].items(), key=lambda x: float(re.sub('\D+', '', x[0]))))
+                #     .\d+.{1,2}$
 
                 ##TODO: Manage highlighting of date
                 elif key == 'DATE':
@@ -344,23 +344,31 @@ def analysisresult(request):
                         sorted(resultDict['d']['DATE'].items(), key=lambda x: datetime.strptime(x[0], '%d-%m-%Y')))
 
         ## TODO: Move this to backend too
-        if filtername == 1:  # Checking if filtername is set to true
-            for key, value in resultDict['d'].items():
-                if key == 'PERSON':
-                    for name in list(resultDict['d'][key]):
-                        if re.sub(" ", "", name).isalpha() == False:
-                            resultDict['d'][key].pop(name)
-                        elif pp.tag(name)[1] != 'Person':
-                            resultDict['d'][key].pop(name)
-                        elif len(name) < 4:
-                            resultDict['d'][key].pop(name)
+        # if filtername == 1:  # Checking if filtername is set to true
+        #     for key, value in resultDict['d'].items():
+        #         if key == 'PERSON':
+        #             for name in list(resultDict['d'][key]):
+        #                 if re.sub(" ", "", name).isalpha() == False:
+        #                     resultDict['d'][key].pop(name)
+        #                 elif pp.tag(name)[1] != 'Person':
+        #                     resultDict['d'][key].pop(name)
+        #                 elif len(name) < 4:
+        #                     resultDict['d'][key].pop(name)
         gui.ExporttoPDF(overlap, prioritydict)
 
         return render(request, os.path.join(TEMPLATE_DIR_PDFSCANNER, "analysisresult.html"),
                       {'resultdict': resultDict['d'],
                        'documentslist': documentslist,
-                       'listofkeys': list(resultDict['d'].keys())})
+                       'listofkeys': list(resultDict['d'].keys()),
+                       "NumberOfCat": len(resultDict['d'].keys()),
+                       'NumberOfValues': numberofvalues(resultDict['d'])})
 
+def numberofvalues(dicti):
+    i = 0
+    for k in dicti:
+        for ak in dicti[k]:
+            i = i + len(ak)
+    return i
 
 @login_required
 def deletedocument(request, pk):
@@ -451,8 +459,9 @@ def exportdetailstoexcel(request):
         documentslist = request.POST.getlist('doc')
         absolutedocumentlist = [settings.BASE_DIR + s for s in documentslist]
         overlap = request.session['overlap']
+        filtername = request.session['filtername']
         prioritydict = request.session['prioritydict']
-        resultDict = gui.analyse_file_webapp(absolutedocumentlist, overlap, prioritydict)
+        resultDict = gui.analyse_file_webapp(absolutedocumentlist, filtername, overlap, prioritydict)
         gui.arrangeAliases(resultDict['d'], False)
         gui.ExportDetailstoExcel()
 
@@ -482,7 +491,6 @@ def exporttopdf(request):
         absolutedocumentlist = [settings.BASE_DIR + s for s in documentslist]
         overlap = request.session['overlap']
         prioritydict = request.session['prioritydict']
-        resultDict = gui.analyse_file_webapp(absolutedocumentlist, overlap, prioritydict)
         gui.InvColorDictLabelstoColors = request.session['InvColorDictLabelstoColors']
         gui.ExporttoPDF(overlap, prioritydict)
 
@@ -507,8 +515,9 @@ def exportdicttoexceluvo(request):
         documentslist = request.POST.getlist('doc')
         absolutedocumentlist = [settings.BASE_DIR + s for s in documentslist]
         overlap = request.session['overlap']
+        filtername = request.session['filtername']
         prioritydict = request.session['prioritydict']
-        resultDict = gui.analyse_file_webapp(absolutedocumentlist, overlap, prioritydict)
+        resultDict = gui.analyse_file_webapp(absolutedocumentlist, filtername, overlap, prioritydict)
         gui.arrangeAliases(resultDict['d'], False)
         gui.ExportDicttoExcelUVO()
 
@@ -563,7 +572,6 @@ def extracthighlights(request):
         absolutedocumentlist = [settings.BASE_DIR + s for s in documentslist]
         overlap = request.session['overlap']
         prioritydict = request.session['prioritydict']
-        resultDict = gui.analyse_file_webapp(absolutedocumentlist, overlap, prioritydict)
         gui.ExtractHighlights(absolutedocumentlist)
 
         if os.path.exists(path):
@@ -863,7 +871,8 @@ def test(request):
     prioritydict = request.session['prioritydict']
     lst = ['/Users/rashbir/Desktop/Sidekicker/LaurenceWhite/Webapp/newwebapp/webapp/media/documents/Rules_re_Costs.pdf',
            '/Users/rashbir/Desktop/Sidekicker/LaurenceWhite/Webapp/newwebapp/webapp/media/documents/Spotwire_No_2_2004_FCA_571.pdf']
-    a = gui.Highlight_Analyse.delay(lst, gui.InvColorDictLabelstoColors, False, False, False, False, False)
+    a = gui.Highlight_Analyse.delay(lst, gui.InvColorDictLabelstoColors, False, False, False, False, False, filtername,
+                                    overlap, prioritydict)
     # a = gui.test(lst, gui.InvColorDictLabelstoColors)
     # d = a.get()[0]
 

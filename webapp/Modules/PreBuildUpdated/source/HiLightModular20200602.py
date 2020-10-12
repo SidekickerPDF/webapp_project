@@ -438,49 +438,48 @@ def annotate(file:str, page: object, SearchText: str, SearchType:str, sentence:s
     opacity = ColorDict[SearchType][2]
     HighlightThis = ColorDict[SearchType][3]
     # SearchText = " " + SearchText + " "
-    listSearchText.append(SearchText)
-    if listSearchText.count(SearchText) < 2:
-        SearchText = ""
-    areas = page.searchFor(SearchText, quads=False, hit_max = 32)
-##TODO: investigate if Newareas is adding value (or even working)
-    newareas = joinAreas(areas, debug)
-    AddYPointstoListofLineNumbers(newareas, file, page)
-    
-    if HighlightThis:
-        if annotType == "Highlight":
-            for area in newareas:
-                try:
-                    annot = page.addHighlightAnnot(area)
-                    annot = setHI(annot, Color, opacity)
-                except:
-                    ##if debug: print("failed")
-                    0
-        elif annotType == "Underline":
-            for area in newareas:
-                try:
-                    annot = page.addUnderlineAnnot(area)
-                    annot = setHI(annot, Color, opacity)
-                except:
-                    ##if debug: print("failed")
-                    0
+    if SearchText not in listSearchText:
+        listSearchText.append(SearchText)
+        areas = page.searchFor(SearchText, quads=False, hit_max = 32)
+    ##TODO: investigate if Newareas is adding value (or even working)
+        newareas = joinAreas(areas, debug)
+        AddYPointstoListofLineNumbers(newareas, file, page)
 
-        elif annotType == "Rect":
-            for area in newareas:
-                try:
-                    annot = page.addRectAnnot(area)
-                    annot = setHI(annot, Color, opacity)
-                except:
-                    ##if debug: print("failed")
-                    0
-        else:
-            for area in newareas:
-                try:
-                    annot = page.addSquigglyAnnot(area)
-                    annot = setHI(annot, Color, opacity)
-                except:
-                    ##if debug: print("failed")
-                    0
-    return(page)      
+        if HighlightThis:
+            if annotType == "Highlight":
+                for area in newareas:
+                    try:
+                        annot = page.addHighlightAnnot(area)
+                        annot = setHI(annot, Color, opacity)
+                    except:
+                        ##if debug: print("failed")
+                        0
+            elif annotType == "Underline":
+                for area in newareas:
+                    try:
+                        annot = page.addUnderlineAnnot(area)
+                        annot = setHI(annot, Color, opacity)
+                    except:
+                        ##if debug: print("failed")
+                        0
+
+            elif annotType == "Rect":
+                for area in newareas:
+                    try:
+                        annot = page.addRectAnnot(area)
+                        annot = setHI(annot, Color, opacity)
+                    except:
+                        ##if debug: print("failed")
+                        0
+            else:
+                for area in newareas:
+                    try:
+                        annot = page.addSquigglyAnnot(area)
+                        annot = setHI(annot, Color, opacity)
+                    except:
+                        ##if debug: print("failed")
+                        0
+    return(page)
 
 def isAmbiguous(date_time):
     if int(date_time[8:9]) < 13 and int(date_time[5:6]) < 13:

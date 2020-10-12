@@ -209,8 +209,9 @@ def documentsview(request):
 
         if 'overlap' in request.POST.dict():
             overlap = 1
-        elif ('overlap' not in request.POST.dict()) and (request.session['overlap'] == 1):
-            overlap = 0
+        elif ('overlap' not in request.POST.dict()) and ('overlap' in request.session == 1):
+            if request.session['overlap'] == 1:
+                overlap = 0
         else:
             overlap = 1
         request.session['overlap'] = overlap  ## Setting session value for the overlap

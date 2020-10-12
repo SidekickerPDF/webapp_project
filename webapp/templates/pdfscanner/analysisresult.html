@@ -240,19 +240,23 @@
                         {% for data in j %}
                         <tr>
                             <td style="font-size:12px;"
-                                title="Open the document in new tab"
+                                onmouseover="infoP('Open the document in new tab')"
+                                onmouseout="HideinfoP()"
                                 width="10%"
                                 onclick="window.open('media/documents/highlight/{{data.0}}')">
                                 <a href="javascript:void(0)"> {{ data.0 }} </a>
                             </td>
                             <td style="font-size:12px;"
-                                title="open the {{ data.0 }} at page number {{ data.1 }}"
+                                onmouseover="infoP('open the {{ data.0 }} at page number {{ data.1 }}')"
+                                onmouseout="HideinfoP()"
                                 width="5%"%
                                 onclick="window.open('media/documents/highlight/{{data.0}}#page={{data.1}}')">
                                 <a href="javascript:void(0)"> {{ data.1 }} </a>
                             </td>
                             <td style="font-size:12px;"
                                 title="Click to see the {{ i }} in document"
+                                onmouseover="infoP('Click to see the {{ i }} in document')"
+                                onmouseout="HideinfoP()"
                                 width="5%" onclick="text.html">
                                 <a href="highlightreview?filepath=media/documents/{{ data.0 }}&page={{ data.1 }}&word={{ i }} " target="_blank">{{ data.2 }}</a></td>
                             <td style="font-size:12px;" width="80%">{{ data.3 }}</td>

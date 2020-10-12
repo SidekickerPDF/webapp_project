@@ -62,6 +62,7 @@ DEFAULT_CULTURE = Culture.English
 Y0 = {}
 Y1 = {}
 LineNumbers = {}
+listSearchText = []
 
 
 patternRegexSimpleDate = regex.compile(regexSimpleDate)
@@ -379,7 +380,6 @@ def markup(input_pdf, DocDictListInstance, ColorDict, debug):
     Y1[input_pdf]={}
     LineNumbers[input_pdf] = {}
     pageCounter = 0
-    listSearchText = []
     doc = fitz.open(input_pdf)
     for page in doc:
 
@@ -397,16 +397,14 @@ def markup(input_pdf, DocDictListInstance, ColorDict, debug):
 
             for k2 in value:
                 SearchText = k2
-                listSearchText.append(SearchText)
+
                 # TODO: Manage Number overlapping more accurately
                 if SearchText.isdigit():
                     SearchText = " " + SearchText + " "
-                print(SearchText)
-                if listSearchText.count(SearchText) < 2:
-                    print("annotate ------>" + SearchText)
-                    for lst in value[k2]:
-                        if lst[1] == pageCounter:
-                            if ColorDict[key][3]: page=annotate(input_pdf, page, SearchText, key, "", ColorDict, debug)
+
+                for lst in value[k2]:
+                    if lst[1] == pageCounter:
+                        if ColorDict[key][3]: page=annotate(input_pdf, page, SearchText, key, "", ColorDict, debug)
 
         LineNumbers[input_pdf][page] = CompileListofLineNumbers(Y0, Y1, input_pdf, page)
     return(doc)
@@ -440,6 +438,9 @@ def annotate(file:str, page: object, SearchText: str, SearchType:str, sentence:s
     opacity = ColorDict[SearchType][2]
     HighlightThis = ColorDict[SearchType][3]
     # SearchText = " " + SearchText + " "
+    listSearchText.append(SearchText)
+    if listSearchText.count(SearchText) < 2:
+        SearchText = ""
     areas = page.searchFor(SearchText, quads=False, hit_max = 32)
 ##TODO: investigate if Newareas is adding value (or even working)
     newareas = joinAreas(areas, debug)
